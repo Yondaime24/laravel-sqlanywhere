@@ -6,8 +6,8 @@ This package provides a Laravel database connection, query grammar, schema gramm
 
 It is intended for Laravel applications that need to use SQL Anywhere while continuing to use Laravel's database layer, Query Builder, Eloquent ORM, migrations, and other standard database features.
 
-> **Status:** Early development / experimental
-> This package is being developed and tested against Laravel 12 and SQL Anywhere 17. It should be considered experimental until the test suite and broader database compatibility testing are complete.
+> **Status:** Early release
+> This package provides SQL Anywhere 17 database support for Laravel. It is currently tested with Laravel 12 and Laravel 13 and should be considered an early release while additional SQL Anywhere/Laravel compatibility testing is performed.
 
 ---
 
@@ -15,18 +15,18 @@ It is intended for Laravel applications that need to use SQL Anywhere while cont
 
 The package currently provides:
 
-* SQL Anywhere 17 database connection for Laravel
-* PDO/ODBC connection support
-* SQL Anywhere query grammar
-* SQL Anywhere schema grammar
-* SQL Anywhere query processor
-* SQL Anywhere-compatible `insertGetId()` handling
-* SQL Anywhere-compatible `TOP` / `START AT` pagination syntax
-* SQL Anywhere-compatible migration column types
-* SQL Anywhere identity/autoincrement support
-* SQL Anywhere schema introspection
-* Laravel Eloquent and Query Builder integration
-* Laravel migration support
+- SQL Anywhere 17 database connection for Laravel
+- PDO/ODBC connection support
+- SQL Anywhere query grammar
+- SQL Anywhere schema grammar
+- SQL Anywhere query processor
+- SQL Anywhere-compatible `insertGetId()` handling
+- SQL Anywhere-compatible `TOP` / `START AT` pagination syntax
+- SQL Anywhere-compatible migration column types
+- SQL Anywhere identity/autoincrement support
+- SQL Anywhere schema introspection
+- Laravel Eloquent and Query Builder integration
+- Laravel migration support
 
 The package is designed to minimize application-level changes. Developers should be able to continue using Laravel's normal database APIs instead of writing SQL Anywhere-specific code for every operation.
 
@@ -36,13 +36,13 @@ The package is designed to minimize application-level changes. Developers should
 
 Before installing the package, make sure the environment has:
 
-* PHP 8.2 or later
-* Laravel 12.x
-* SQL Anywhere 17
-* SQL Anywhere 17 ODBC Driver
-* PHP PDO
-* PHP PDO ODBC extension
-* A running SQL Anywhere database server
+- PHP 8.2 or later
+- Laravel 12.x
+- SQL Anywhere 17
+- SQL Anywhere 17 ODBC Driver
+- PHP PDO
+- PHP PDO ODBC extension
+- A running SQL Anywhere database server
 
 For Windows installations, the SQL Anywhere ODBC driver must be correctly installed and available to PHP.
 
@@ -400,21 +400,21 @@ Testing is currently focused on SQL Anywhere 17.
 
 The test suite is intended to cover:
 
-* Database connection
-* Query Builder
-* Eloquent queries
-* Inserts
-* Identity retrieval
-* Updates
-* Deletes
-* Pagination
-* Migrations
-* Schema inspection
-* Indexes
-* Foreign keys
-* Transactions
-* Aggregates
-* Date/time handling
+- Database connection
+- Query Builder
+- Eloquent queries
+- Inserts
+- Identity retrieval
+- Updates
+- Deletes
+- Pagination
+- Migrations
+- Schema inspection
+- Indexes
+- Foreign keys
+- Transactions
+- Aggregates
+- Date/time handling
 
 A SQL Anywhere 17 database server is required for integration tests.
 
@@ -426,18 +426,18 @@ This project is currently under development.
 
 The following areas may require additional testing or implementation:
 
-* Complex database-specific queries
-* MySQL-specific raw SQL
-* JSON-specific operations
-* Advanced upsert behavior
-* Full-text search
-* Database-specific locking behavior
-* Advanced index operations
-* Stored procedures
-* SQL Anywhere-specific data types
-* Differences between SQL Anywhere versions
-* PHP PDO ODBC driver behavior
-* Laravel features that generate database-specific SQL
+- Complex database-specific queries
+- MySQL-specific raw SQL
+- JSON-specific operations
+- Advanced upsert behavior
+- Full-text search
+- Database-specific locking behavior
+- Advanced index operations
+- Stored procedures
+- SQL Anywhere-specific data types
+- Differences between SQL Anywhere versions
+- PHP PDO ODBC driver behavior
+- Laravel features that generate database-specific SQL
 
 If you encounter a compatibility problem, please open an issue with:
 
@@ -467,10 +467,10 @@ Before submitting a pull request:
 
 Pull requests should explain:
 
-* What problem is being solved
-* Why the existing implementation does not work with SQL Anywhere
-* How the change works
-* Which SQL Anywhere version was tested
+- What problem is being solved
+- Why the existing implementation does not work with SQL Anywhere
+- How the change works
+- Which SQL Anywhere version was tested
 
 ---
 
