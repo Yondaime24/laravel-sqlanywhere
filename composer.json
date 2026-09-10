@@ -1,0 +1,23 @@
+{
+  "name": "yondaime/laravel-sqlanywhere",
+  "description": "SQL Anywhere 17 database integration for Laravel.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "illuminate/database": "^12.0",
+    "illuminate/support": "^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Yondaime\\LaravelSqlAnywhere\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Yondaime\\LaravelSqlAnywhere\\SqlAnywhereServiceProvider"
+      ]
+    }
+  }
+}
